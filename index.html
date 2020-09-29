@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>🏔🎵 - A Music Player</title>
+    <style>
+	 	.title {
+	 	  font-size: 100px;
+	 	  text-align: center;
+	 	}
+	 	.center {
+	 		text-align:center;
+	 	}
+	 	button {
+	 		font-size: 40px;
+	 	}
+	</style>
+  </head>
+  <body>
+    <h1 class="title">🏔🎵</h1>
+    <p>&nbsp;</p>
+    <h1 class="center isOn" style="display: none;">🎵 Playing The Music! 🎵</h1>
+	<p>&nbsp;</p>
+	<div class="center">
+		 <button class="clicked" onclick="playMusic()">Play Music</button>
+		 <p>    <p>
+		 <input style="font-size: 35px;" class="url_box" placeholder="File Path to audio"></input>
+		 <p></p>
+		 <input style="font-size: 35px;" class="doLoop" placeholder="Play Audio in Loop(true/false)"></input>
+	</div>
+    <!-- You can also require other files to run in this process -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
