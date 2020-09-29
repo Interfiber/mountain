@@ -1,5 +1,5 @@
 # Mountain
-A Small Electron Music Player I made after getting fed up with itunes
+A Small Electron Music Player I made after getting fed up with iTunes/Apple Music
 
 
 ## Running it
