@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>🏔🎵 - A Music Player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.css">
     <style>
 	 	.title {
 	 	  font-size: 100px;
@@ -22,8 +23,9 @@
     <h1 class="center isOn" style="display: none;">🎵 Playing The Music! 🎵</h1>
 	<p>&nbsp;</p>
 	<div class="center">
-		 <button class="clicked" onclick="playMusic()">Play Music</button>
+		 <button class="clicked button is-success" onclick="playMusic()" style="font-size: 40px;">Play Music</button>
 		 <p>    <p>
+    <p>&nbsp;</p>
 		 <input style="font-size: 35px;" class="url_box" placeholder="File Path to audio"></input>
 		 <p></p>
 		 <input style="font-size: 35px;" class="doLoop" placeholder="Play Audio in Loop(true/false)"></input>
