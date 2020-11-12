@@ -6,12 +6,17 @@
 // process.
 var playing_music = "no";
 function playMusic() {
+  const fs = require('fs');
   const text_box = document.querySelector(".url_box");
   const value = text_box.value;
   const title = document.querySelector(".isOn");
   const loop = document.querySelector(".doLoop");
   const	offButton = document.querySelector(".stopMusic");
-  console.log(value);
+  console.log("Sound File : " + value);
+  if(!fs.existsSync(value)) {
+    alert("🤔 Hmm.. That files does not exist!");
+    return 1;
+  }
   var sound = new Howl({
     src: [value]
   });
@@ -22,7 +27,6 @@ function playMusic() {
 
     title.style.display = "";
     playing_music = "yes";
-    console.log(playing_music);
     sound.play();
 
   });
@@ -39,3 +43,4 @@ function playMusic() {
     }
   });
 }
+
